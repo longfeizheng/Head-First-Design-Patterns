@@ -7,7 +7,7 @@ package cn.merryyou.chapter04;
  * @email i@merryyou.cn
  * @since 1.0
  */
-public class ChicagoStylePizzaStory extends PizzaStore {
+public class ChicagoStylePizzaStore extends PizzaStore {
     @Override
     Pizza createPizza(String type) {
         return new ChicagoStyleCheesePizza();

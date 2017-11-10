@@ -1,17 +1,15 @@
 package cn.merryyou.chapter04;
 
 /**
- * Created on 2017/11/9 0009.
+ * Created on 2017/11/10.
  *
  * @author zlf
- * @email i@merryyou.cn
  * @since 1.0
  */
-public class CheesePizza extends Pizza {
-
+public class ClamPizza extends Pizza {
     PizzaIngredientFactory ingredientFactory;
 
-    public CheesePizza(PizzaIngredientFactory ingredientFactory) {
+    public ClamPizza(PizzaIngredientFactory ingredientFactory) {
         this.ingredientFactory = ingredientFactory;
     }
 

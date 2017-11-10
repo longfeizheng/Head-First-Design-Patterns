@@ -9,9 +9,14 @@ package cn.merryyou.chapter04;
  */
 public class NYPizzaStore extends PizzaStore {
 
+
     @Override
     Pizza createPizza(String type) {
+        Pizza pizza = null;
+        PizzaIngredientFactory ingredientFactory = new NYPizzaIngredientFactory();
         if(type.endsWith("cheese")){
+            pizza = new CheesePizza(ingredientFactory);
+            pizza.setName("New York Style Cheese Pizza");
             return new NYStyleCheesePizza();
         }else if(type.endsWith("vaggie")){
             return new NYStyleCheesePizza();
