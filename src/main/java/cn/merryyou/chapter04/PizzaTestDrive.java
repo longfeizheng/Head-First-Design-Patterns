@@ -10,7 +10,7 @@ package cn.merryyou.chapter04;
 public class PizzaTestDrive {
     public static void main(String[] args) {
         PizzaStore nyStore = new NYPizzaStore();
-        PizzaStore chicagoStore = new ChicagoStylePizzaStory();
+        PizzaStore chicagoStore = new ChicagoStylePizzaStore();
 
         Pizza pizza = nyStore.orderPizza("cheese");
         System.out.println("Ethan ordered a " + pizza.getName() + "\n");
